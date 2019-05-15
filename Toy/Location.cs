@@ -2,7 +2,7 @@ using System;
 
 namespace Toy {
 
-    public struct Location {
+    public class Location {
 
         public String File { get; set; }
         public int Line { get; set; }

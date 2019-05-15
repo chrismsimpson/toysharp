@@ -11,6 +11,16 @@ namespace Toy {
         BracketClose = '}',
         SquareBracketOpen = '[',
         SquareBracketClose = ']',
+        
+        Space = ' ',
+
+        Period = '.',
+
+        Underscore = '_',
+
+        Hash = '#',
+        NewLine = '\n',
+        CR = '\r',
 
         EndOfFile = -1,
 
@@ -22,5 +32,41 @@ namespace Toy {
         // primary
         Identifier = -5,
         Number = -6
+    }
+
+    public static partial class TokenHelpers {
+
+        public static bool IsSpace(this Token token) {
+
+            return (token == Token.Space);
+        }
+
+        public static bool IsAlpha(this Token token) {
+
+            var c = (char) token;
+
+            return Char.IsLetter(c);
+        }
+
+        public static bool IsAlphaNumeric(this Token token) {
+
+            var c = (char) token;
+
+            return Char.IsLetterOrDigit(c);
+        }
+
+        public static String ToRawString(this Token token) {
+
+            var c = (char) token;
+
+            return new String(c, 1);
+        }
+
+        public static bool IsDigit(this Token token) {
+
+            var c = (char) token;
+
+            return Char.IsDigit(c);
+        }
     }
 }
