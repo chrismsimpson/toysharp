@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace Toy {
+namespace Toy.AST {
 
-    public class PrototypeAST {
+    public class Prototype {
 
         public Location Location { get; private set; }
         public String Name { get; private set; }
-        public IEnumerable<ExprAST> Arguments { get; private set; }
+        public IEnumerable<Node> Arguments { get; private set; }
 
-        public PrototypeAST(Location location, String name, IEnumerable<ExprAST> arguments) {
+        public Prototype(Location location, String name, IEnumerable<Node> arguments) {
 
             this.Location = location;
             this.Name = name;

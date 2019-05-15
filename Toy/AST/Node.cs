@@ -1,14 +1,14 @@
 using System;
 
-namespace Toy {
+namespace Toy.AST {
 
-    public class ExprAST {
+    public class Node {
 
-        public ExprASTKind Kind { get; private set; }
+        public Kind Kind { get; private set; }
 
         public Location Location { get; private set; }
 
-        public ExprAST(ExprASTKind kind, Location location) {
+        public Node(Kind kind, Location location) {
 
             this.Kind = kind;
             this.Location = location;
