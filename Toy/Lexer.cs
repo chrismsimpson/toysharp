@@ -93,8 +93,7 @@ namespace Toy {
                 this.LastToken = this.getTokenFromNextChar();
             }
 
-            this.LastLocation.Line = this.CurrentLineNumber;
-            this.LastLocation.Column = this.CurrentColumn;
+            this.LastLocation = this.LastLocation.MoveTo(this.CurrentLineNumber, this.CurrentColumn);
 
             if (this.LastToken.IsAlpha()) {
 

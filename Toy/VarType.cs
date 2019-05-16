@@ -11,6 +11,6 @@ namespace Toy {
     public struct VarType {
 
         public VType VType { get; set; }
-        public IEnumerable<int> Shape { get; set; }
+        public IList<double> Shape { get; set; }
     }
 }

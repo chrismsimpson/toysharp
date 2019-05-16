@@ -15,7 +15,7 @@ namespace Toy {
 
         /// PUBLIC 
 
-        public String ReadNextLine() {
+        public override String ReadNextLine() {
 
             return this.Reader.ReadLine();
         }

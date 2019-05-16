@@ -18,9 +18,19 @@ namespace Toy {
 
         Underscore = '_',
 
+        LessThan = '<',
+        GreaterThan = '<',
+        Equals = '=',
+
         Hash = '#',
         NewLine = '\n',
         CR = '\r',
+        Comma = ',',
+
+        Plus = '+',
+        Minus = '-',
+        Asterisk = '*',
+        Slash = '/',
 
         EndOfFile = -1,
 
@@ -67,6 +77,13 @@ namespace Toy {
             var c = (char) token;
 
             return Char.IsDigit(c);
+        }
+
+        public static bool IsAscii(this Token token) {
+
+            var c = (char) token;
+
+            return c < 128;
         }
     }
 }

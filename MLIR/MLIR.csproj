@@ -5,4 +5,9 @@
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="libLLVM" Version="7.0.1" />
+    <PackageReference Include="LLVMSharp" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>
