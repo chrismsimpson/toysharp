@@ -1,3 +1,5 @@
+DISCLAIMER: This has now evolved to this: [Coral](https://github.com/chrismsimpson/Coral).
+
 # toysharp
 
 An attempted port of MLIR's Toy language to c#
